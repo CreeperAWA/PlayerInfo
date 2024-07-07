@@ -2,10 +2,10 @@ let PluginName = '玩家详细信息记录'// LiteLoader-AIDS automatic generate
 /// <reference path="c:\Users\matebook 16s\.vscode\LLSE-Aids本地库目录/dts/helperlib/src/index.d.ts"/> 
 
 ll.registerPlugin(
-    /* name */ "玩家详细信息记录",
+    /* name */ "PlayerInfo",
     /* introduction */ "",
-    /* version */ [2,0,0],
-    /* otherInformation */ "记录玩家详细信息"
+    /* version */ [2,0,1],
+    /* otherInformation */ "PlayerInfo"
 ); 
 
 
@@ -62,13 +62,9 @@ function GetPlayerInfo(Player) {
         IsOnGround: Player.isOnGround, // 玩家是否在地上  
         IsOnHotBlock: Player.isOnHotBlock, // 玩家是否在高温方块上（岩浆等）  
         IsTrading: Player.isTrading, // 玩家在交易  
-        IsAdventure: Player.isAdventure, // 玩家是否是冒险模式  
         IsGliding: Player.isGliding, // 玩家在滑行  
-        IsSurvival: Player.isSurvival, // 玩家是否是生存模式  
-        IsSpectator: Player.isSpectator, // 玩家是否是观众模式，实际上应该是旁观模式，LL文档是这么写的我就这么写了  
         IsRiding: Player.isRiding, // 玩家是否在骑行  
         IsDancing: Player.isDancing, // 玩家是否在跳舞，我猜测应该是是否在做表情动作，LL文档是这么写的，我就这么写了  
-        IsCreative: Player.isCreative, // 玩家是否是创造模式  
         IsFlying: Player.isFlying, // 玩家是否在飞行  
         IsSleeping: Player.isSleeping, // 玩家是否正在睡觉  
         IsMoving: Player.isMoving, // 玩家是否正在移动  

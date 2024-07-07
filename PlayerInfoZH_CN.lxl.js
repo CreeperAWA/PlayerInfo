@@ -4,7 +4,7 @@ let PluginName = '玩家详细信息记录'// LiteLoader-AIDS automatic generate
 ll.registerPlugin(
     /* name */ "玩家详细信息记录",
     /* introduction */ "",
-    /* version */ [2,0,0],
+    /* version */ [2,0,1],
     /* otherInformation */ "记录玩家详细信息"
 ); 
 
@@ -62,13 +62,9 @@ function GetPlayerInfo(Player) {
         玩家是否在地上: Player.isOnGround, // 玩家是否在地上  
         玩家是否在高温方块上: Player.isOnHotBlock, // 玩家是否在高温方块上（岩浆等）  
         玩家在交易: Player.isTrading, // 玩家在交易  
-        玩家是否是冒险模式: Player.isAdventure, // 玩家是否是冒险模式  
         玩家在滑行: Player.isGliding, // 玩家在滑行  
-        玩家是否是生存模式: Player.isSurvival, // 玩家是否是生存模式  
-        玩家是否是观众模式: Player.isSpectator, // 玩家是否是观众模式，实际上应该是旁观模式，LL文档是这么写的我就这么写了  
         玩家是否在骑行: Player.isRiding, // 玩家是否在骑行  
         玩家是否在跳舞: Player.isDancing, // 玩家是否在跳舞，我猜测应该是是否在做表情动作，LL文档是这么写的，我就这么写了  
-        玩家是否是创造模式: Player.isCreative, // 玩家是否是创造模式  
         玩家是否在飞行: Player.isFlying, // 玩家是否在飞行  
         玩家是否正在睡觉: Player.isSleeping, // 玩家是否正在睡觉  
         玩家是否正在移动: Player.isMoving, // 玩家是否正在移动  
